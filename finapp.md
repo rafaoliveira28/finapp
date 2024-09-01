@@ -9,7 +9,7 @@ categories: Blog
 tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Ciência", "Cultura", "Financeiro", "Vendas", "Negócios"]
 linkweb: http://164.152.62.87/
 linkblog: https://rafaoliveira28.github.io/finapp/
-video:
+video: https://www.youtube.com/watch?v=tGwwLh7zW8w
 ---
 
 # FinApp
