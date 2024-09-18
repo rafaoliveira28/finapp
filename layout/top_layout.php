@@ -25,11 +25,6 @@ protegePagina();
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
 </head>
 
 <body id="page-top">
