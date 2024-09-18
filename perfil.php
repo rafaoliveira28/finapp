@@ -25,7 +25,7 @@ include 'core/alerts.php';
                     <div class="mb-3">
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input disabled class='form-control' aria-describedby='basic-addon1' type="email"
+                            <input disabled class='form-control' aria-describedby='basic-addon1' type="email" id="email"
                                 name="email" value="<?php echo $_SESSION['usuario']->getEmail(); ?>" />
                         </div>
                     </div>
@@ -43,18 +43,18 @@ include 'core/alerts.php';
                                 value="<?php echo $_SESSION['usuario']->getNomeEmpresa(); ?>" />
                         </div>
                         <div class="mb-3">
-                            <label style="width: 100px" class="form-label" id="cpf" for="cpf">CPF</label>
+                            <label style="width: 100px" class="form-label" for="cpf">CPF</label>
                             <input pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" disabled class='form-control'
-                                aria-describedby='basic-addon1' type="text" placeholder="000.000.000-00" name="cpf"
+                                aria-describedby='basic-addon1' type="text" placeholder="000.000.000-00" name="cpf" id="cpf"
                                 value="<?php echo $_SESSION['usuario']->getCpf(); ?>" />
-                            <label style="width: 100px" class="form-label" id="cnpj" for="cnpj">CNPJ</label>
+                            <label style="width: 100px" class="form-label" for="cnpj">CNPJ</label>
                             <input disabled pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" class='form-control'
-                                aria-describedby='basic-addon1' type="text" placeholder="00.000.000/0000-00" name="cnpj"
+                                aria-describedby='basic-addon1' type="text" placeholder="00.000.000/0000-00" name="cnpj" id="cnpj"
                                 value="<?php echo $_SESSION['usuario']->getCnpj(); ?>" />
                         </div>
                         <div class="mb-3">
-                            <label style="width: 100px" class="form-label" id="telefone" for="telefone">Telefone</label>
-                            <input class='form-control' aria-describedby='basic-addon1' type="text" name="telefone"
+                            <label style="width: 100px" class="form-label" for="telefone">Telefone</label>
+                            <input class='form-control' aria-describedby='basic-addon1' type="text" name="telefone" id="telefone"
                                 value="<?php echo $_SESSION['usuario']->getTelefone(); ?>" />
                         </div>
                         <h4 class="card-title text-primary">Endereço</h4>
@@ -70,8 +70,8 @@ include 'core/alerts.php';
                                 value="<?php echo $_SESSION['usuario']->getNumeroRua(); ?>" />
                         </div>
                         <div class="mb-3">
-                            <label style="width: 100px" class="form-label" id="cep" for="cep">CEP</label>
-                            <input class='form-control' aria-describedby='basic-addon1' placeholder="00000-000"
+                            <label style="width: 100px" class="form-label" for="cep">CEP</label>
+                            <input class='form-control' aria-describedby='basic-addon1' placeholder="00000-000" id="cep"
                                 type="text" name="cep" value="<?php echo $_SESSION['usuario']->getCep(); ?>" />
                             <label style="width: 100px" class="form-label" id="cidade" for="cidade">Cidade</label>
                             <input class='form-control' aria-describedby='basic-addon1' type="text" name="cidade"
@@ -139,6 +139,7 @@ include 'core/alerts.php';
             </div>
         </div>
     </div>
+    <script src="js/formatters.js"></script>
 </body>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
