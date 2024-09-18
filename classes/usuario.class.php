@@ -183,7 +183,7 @@ class Usuario
     public function updateUsuario($idusuario)
     {
         $conn = DB::connect();
-        $query = "UPDATE ca_usuario SET ca_nomeusuario = :nome, ca_nomeempresa = :nomeempresa, ca_telusuario = :telefone, ca_rua = :logradouro, ca_numerorua = :numlogradouro, ca_cep = :cep; ca_cidade = :cidade, ca_bairro = :bairro
+        $query = "UPDATE ca_usuario SET ca_nomeusuario = :nome, ca_nomeempresa = :nomeempresa, ca_telusuario = :telefone, ca_rua = :logradouro, ca_numerorua = :numlogradouro, ca_cep = :cep, ca_cidade = :cidade, ca_bairro = :bairro
                   WHERE idusuario = $idusuario";
         $stmt = $conn->prepare($query);
 
